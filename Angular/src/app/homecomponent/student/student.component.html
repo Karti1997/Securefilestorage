@@ -1,0 +1,34 @@
+<mat-card class="example-card">
+<mat-card-header >
+    <mat-card-title>Register as Student</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+<form class="example-form" (submit)="onsignup(loginForm)" #loginForm="ngForm">
+    <div class="row register-form">
+        <div class="col-md-6">
+            <mat-form-field class="form-group">
+                <input matInput class="form-control"   placeholder="First Name *" ngModel type="text" name="firstname" #firstname="ngModel" required>
+            </mat-form-field>
+            <mat-form-field class="form-group">
+                <input matInput class="form-control"  placeholder="Your email *" ngModel type="email" name="email" #email="ngModel" required>
+            </mat-form-field>
+            <mat-form-field class="form-group">
+                <input matInput class="form-control" minlength="8"  placeholder="Password *" ngModel type="password" name="password" #password="ngModel" required>
+            </mat-form-field>
+        </div>
+        <div class="col-md-6">
+            <mat-form-field class="form-group">
+                <input matInput class="form-control"  placeholder="User Name *" ngModel type="text" name="username" #lastname="ngModel" required>
+            </mat-form-field>
+            <mat-form-field class="form-group">
+                <input matInput class="form-control" minlength="10" maxlength="10" placeholder="Your Phone *" ngModel type="text" name="phoneno" #phoneno="ngModel" required>
+            </mat-form-field>
+            <mat-form-field class="form-group">
+                <input matInput class="form-control" minlength="8"  placeholder="Confirm Password *" ngModel type="password" name="confirmpassword" #password="ngModel" required>
+            </mat-form-field>
+            <button mat-raised-button class="btnRegister" type="submit">Register</button>
+        </div>
+    </div>
+</form>
+</mat-card-content>
+</mat-card>

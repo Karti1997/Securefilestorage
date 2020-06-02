@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>File Storage</span>
+        <button style="margin-left: 1080px" mat-raised-button routerLink="/" routerLinkActive="active">
+            <span>logout</span>
+        </button> 
+    </mat-toolbar-row>
+</mat-toolbar>
+<div class="user-ragistration">
+	<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome</h3>
+                        <p>Protecting your files in the cloud is our priority</p>
+                    </div>
+                    <div class="col-md-9 register-right">
+                            <mat-tab-group mat-align-tabs="center">
+                                <mat-tab label="Login"> 
+                                    <app-login></app-login>
+                                </mat-tab>
+                                <mat-tab label="Register"> 
+                                    <app-student></app-student>
+                                </mat-tab>
+                            </mat-tab-group>
+                    </div>
+                </div>
+
+            </div>
+</div>
